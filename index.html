@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion des Stocks de Vin</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Gestion des Stocks de Vin</h1>
+    <h2>Ajouter un Nouveau Vin</h2>
+    <form id="stockForm">
+        <input type="text" id="vinNom" placeholder="Nom du vin" required>
+        <input type="number" id="vinQuantite" placeholder="Quantité" required>
+        <button type="submit">Ajouter au Stock</button>
+    </form>
+
+    <h2>Liste des Stocks</h2>
+    <table id="stocksTable">
+        <thead>
+            <tr>
+                <th>Nom du Vin</th>
+                <th>Quantité</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Les lignes du tableau seront ajoutées ici par JavaScript -->
+        </tbody>
+    </table>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
